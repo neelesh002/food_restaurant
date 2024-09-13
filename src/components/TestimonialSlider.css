@@ -1,0 +1,97 @@
+.Testimonial-slider{
+    text-align: center;
+    padding: 20px;
+}
+
+.Testimonial-slider h2{
+    font-family: "Brush Script MT";
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+.testimonial-container{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.testimonial{
+    min-height: 300px;
+    max-width: 500px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.testimonial.active{
+    opacity: 1;
+
+}
+.testimonial p{
+
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.testimonial h4{
+    font-size: 1.2rem;
+    margin-top : 10px ;
+
+}
+.testimonial h5{
+    font-size: 1rem;
+    color: gray;
+}
+
+.testimonial-navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.testimonial-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.3s ease-in-out;
+
+}
+.testimonial-image.active{
+    border: 3px solid #ffa500;
+}
+
+.slider-control{
+    margin-top: 20px;
+
+}
+.slider-control button{
+    background-color: #ffa500;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:900px){
+    .Testimonial-slider h2{
+        font-size: 2rem;
+    }
+    .testimonial-container{
+        flex-direction: column;
+    }
+    .testimonial p{
+        font-size: 1rem;
+
+    }
+    
+}
