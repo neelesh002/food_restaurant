@@ -27,7 +27,7 @@ const [activeCategory, setActiveCategory]=useState('All');
 const filterredItems = activeCategory==='All' ? menuItems : menuItems.filter(item => item.category===activeCategory);
 
 return (
-    <div className="menu">
+    <div className="menu" id="Menu">
         <h2>Our Menu</h2>
         <div className="menu-categories">
             {category.map(category =>(

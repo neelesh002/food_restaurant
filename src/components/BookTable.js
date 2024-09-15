@@ -1,9 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import './BookTable.css';
 
 
 
 const BookTable=()=>{
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleSubmit = (event) =>{
+        event.preventDefault();
+        setIsSubmitted(true);
+    };
 
     return (
         <div className="book-table-section" id="Book-Table">
@@ -12,7 +18,7 @@ const BookTable=()=>{
     
         <h2>Book A Table</h2>
 
-        <form >
+        <form  onSubmit={handleSubmit}>
             <input type="text" placeholder="Your Name" required />
             <input type="tel" placeholder="Phone Number" required />
             <input type="email" placeholder="Your Email" required />
@@ -21,6 +27,7 @@ const BookTable=()=>{
 
             <button type="submit">Book Now</button>
             </form>
+            {isSubmitted && <p>Your form is submitted!</p>}
             </div>
             <div className="map-container">
 

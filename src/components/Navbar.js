@@ -13,9 +13,9 @@ const Navbar =()=>{
    <nav className='navbar'>
     <h1 className='navbar-logo' >Chapter One Cafe and Restaurant</h1>
     <div className={isMobile ? "nav-links-mobile" :"nav-links"}>
-    <a href='home'>Home</a>
-    <a href='Menu'>Menu</a>
-    <a href='About'>About</a>
+    <a href='#home'>Home</a>
+    <a href='#Menu'>Menu</a>
+    <a href='#About'>About</a>
     <a href='#Book-Table'>Book Table</a>
     <FaUser className='nav-icon'></FaUser>
     <FaShoppingCart className='nav-icon'></FaShoppingCart>

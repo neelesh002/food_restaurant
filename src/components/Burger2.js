@@ -9,7 +9,7 @@ const Burger2=()=>{
      <div className="burger-section">
 
 
-        <div className="burger-content">
+        <div className="burger-content" id="About">
             <img src="/Images/F7.jpg" alt="F7.jpg"  />
             <div className="burger-text">
             <h2>We are Chapter One</h2>
